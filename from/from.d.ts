@@ -3,5 +3,5 @@
         length: number;
         [i: number]: T;
     }
-    function from<T>(arrayLike: ArrayLike<T>, mapFn?: (item: any, index: number) => any, thisArg?: any): T[];
+    function from<T>(arrayLike: ArrayLike<any>, mapFn?: (item: any, index: number) => T, thisArg?: any): T[];
 }
