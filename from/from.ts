@@ -3,6 +3,8 @@
         length: number;
         [i: number]: T;
     }
+    export function from<T>(arrayLike: ArrayLike<T>): T[];
+    export function from<T>(arrayLike: ArrayLike<any>, mapFn?: (item: any, index: number) => T, thisArg?: any): T[];
     export function from<T>(arrayLike: ArrayLike<any>, mapFn?: (item: any, index: number) => T, thisArg?: any) {
         var array: T[] = [];
         var push: (item: any, index: number) => any;
