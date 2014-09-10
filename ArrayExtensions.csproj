@@ -23,6 +23,7 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="fill\fill.ts" />
     <TypeScriptCompile Include="from\from.ts" />
   </ItemGroup>
   <ItemGroup>
